@@ -1,6 +1,6 @@
 <template>
     <h1 class="text-2xl">ToDo List</h1>
-    <div class="bg-gray-50 text-black p-2 rounded-md">
+    <div class="text-black p-2 rounded-md">
         <ul>
             <TodoItem v-for="(todo, index) in todos" :key="index" 
                 :todoString="todo.todoString" 
