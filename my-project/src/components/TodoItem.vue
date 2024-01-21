@@ -56,7 +56,7 @@ export default {
     endEditing() {
       this.isEditing = false;
       this.$emit("on-edit", this.newTodoString);
-      console.log()
+      // console.log(this.newTodoString)
     }
   }
 }
