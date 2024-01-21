@@ -6,6 +6,8 @@
                 :todoString="todo.todoString" 
                 :completed="todo.completed"
                 @on-delete="deleteTodo(todo)"
+                @on-complete="toggleTodo(todo)"
+                @on-edit="editTodo(todo, newTodoString)"
             />
         </ul>
 </div>
