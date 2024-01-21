@@ -1,14 +1,13 @@
 <template>
-    <h1>ToDo List</h1>
-    <div>
+    <h1 class="text-2xl">ToDo List</h1>
+    <div class="bg-gray-50 text-black p-2 rounded-md">
         <ul>
             <TodoItem v-for="(todo, index) in todos" :key="index" 
                 :todoString="todo.todoString" 
                 :completed="todo.completed"
+                @on-delete="deleteTodo(todo)"
             />
         </ul>
-
-    
 </div>
 
 </template>
